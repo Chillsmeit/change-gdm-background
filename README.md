@@ -12,7 +12,7 @@ way of dealing with gdm settings.
 It also won't work if your system is set to a custom gdm3 theme. You will have to reset to the
 default configuration of gdm3 before using the script.
 
-This tool was made specifically to work with Ubuntu or Pop OS 20.04, 20.10 and 21.04 as it now
+This tool was made specifically to work with Ubuntu or Pop OS 20.04, 20.10, 21.04 and 22.04 as it now
 bundles all configuration files inside a .gresource file.
 
 If you are going to set an image file that has spaces in its file name or folders, remember to
@@ -28,7 +28,7 @@ SORRY FOR ANY INCOVENIENCE.
 First, you will need to install libglib2.0-dev-bin with `sudo apt install libglib2.0-dev-bin`
 Then, you can download the script with the command below:
 ```
-wget github.com/thiggy01/change-gdm-background/raw/master/change-gdm-background
+wget wget github.com/Chillsmeit/change-gdm-background/raw/master/change-gdm-background
 ```
 And set it as an executable with `chmod +x change-gdm-background`
 
