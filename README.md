@@ -1,4 +1,4 @@
-# change-gdm-background
+# change-gdm-background-jammy
 
 This script automates the process of setting an image or color in GNOME Display Manager 3 background
 which comes by default with **Ubuntu or Pop OS versions 22.04 Jammy ONLY**
