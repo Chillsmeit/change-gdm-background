@@ -2,7 +2,7 @@
 # Autor: Thiago Silva
 # Contact: thiagos.dasilva@gmail.com
 # URL: https://github.com/thiggy01/change-gdm-background
-# =================================================================== #
+# ==================================================================== #
 
 # Check if script is run by root.
 if [ "$(id -u)" -ne 0 ] ; then
