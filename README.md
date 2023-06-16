@@ -13,7 +13,7 @@ sudo apt install libglib2.0-dev-bin
 ```
 Then, you can download the script with the command below:
 ```
-wget github.com/Chillsmeit/change-gdm-background/raw/master/jammy-change-gdm-background
+wget github.com/Chillsmeit/jammy-change-gdm-background/raw/master/jammy-change-gdm-background
 ```
 And set it as an executable with:
 ```
