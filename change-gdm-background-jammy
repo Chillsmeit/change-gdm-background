@@ -13,7 +13,7 @@ fi
 # Check what linux distro is being used.
 distro="$(lsb_release -c | cut -f 2)"
 if ! [[ "$distro" =~ (jammy) ]]; then
-    echo 'Sorry, this script only works with jammy distros.'
+    echo 'Sorry, this script only works with Jammy distros.'
     exit 1
 fi
 
