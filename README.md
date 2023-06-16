@@ -1,51 +1,38 @@
 # change-gdm-background
 
 This script automates the process of setting an image or color in GNOME Display Manager 3 background
-which comes by default with Ubuntu or Pop OS versions 20.04 Focal Fossa, 20.10 Groovy Gorilla and
-21.04 Hirsute Hippo.
+which comes by default with **Ubuntu or Pop OS versions 22.04 Jammy ONLY**
 
 ## Warning
 
-This script wont work with any older version of Ubuntu or Pop OS because they have a different
-way of dealing with gdm settings.
-
-It also won't work if your system is set to a custom gdm3 theme. You will have to reset to the
-default configuration of gdm3 before using the script.
-
-This tool was made specifically to work with Ubuntu or Pop OS 20.04, 20.10, 21.04 and 22.04 as it now
-bundles all configuration files inside a .gresource file.
+**This fork was made specifically to work with Ubuntu or Pop OS 22.04.**
 
 If you are going to set an image file that has spaces in its file name or folders, remember to
 scape them with backslashes.
-
-## GUI version
-
-I HAVE DISABLED THE GUI APP REPO BECASE IT WAS CAUSING THE NEW UBUNTU 21.10 TO CRASH.
-SORRY FOR ANY INCOVENIENCE.
 
 ## Installation
 
 First, you will need to install libglib2.0-dev-bin with `sudo apt install libglib2.0-dev-bin`
 Then, you can download the script with the command below:
 ```
-wget wget github.com/Chillsmeit/change-gdm-background/raw/master/change-gdm-background
+wget wget github.com/Chillsmeit/change-gdm-background/raw/master/change-gdm-background-jammy
 ```
-And set it as an executable with `chmod +x change-gdm-background`
+And set it as an executable with `chmod +x change-gdm-background-jammy`
 
 ## Usage
 
-Run the script with root privileges such as `sudo ./change-gdm-background /path/to/image`.
+Run the script with root privileges such as `sudo ./change-gdm-background-jammy /path/to/image`.
 
 If you see a message `login image sucessfully changed`, then, when you restart gdm or reboot your
 computer, your gdm background should be covered with the image you selected.
 
-You can restore your original gdm theme any time with `sudo ./change-gdm-background
+You can restore your original gdm theme any time with `sudo ./change-gdm-background-jammy
 --restore`.
 
 ### Change Color
 
 Now you can change that annoying purple color to any color you like. Just type `sudo
-./change-gdm-background \#yourhexcode` and voilá, you changed it. Your color hex format should
+./change-gdm-background-jammy \#yourhexcode` and voilá, you changed it. Your color hex format should
 be of six characters like \\#407294 or three characters like \\#6ac.
 
 ### Multi-screen support
@@ -55,9 +42,3 @@ if you use two or more monitors you may see a streched image through the display
 
 I found a way to configure GDM to work in other modes like mirror or even single display
 [here](https://github.com/thiggy01/change-gdm-background/issues/15), avoiding the joining of them.
-
-## Donation
-
-If you feel this tool was useful and want to show some appreciation, you can donate via
-https://ko-fi.com/thiggy01.
-
