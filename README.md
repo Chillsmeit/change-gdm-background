@@ -11,7 +11,7 @@ First, you will need to install libglib2.0-dev-bin:
 ```sudo apt install libglib2.0-dev-bin```
 Then, you can download the script with the command below:
 ```
-wget wget github.com/Chillsmeit/change-gdm-background/raw/master/change-gdm-background-jammy
+wget github.com/Chillsmeit/change-gdm-background/raw/master/change-gdm-background-jammy
 ```
 And set it as an executable with:
 ```chmod +x change-gdm-background-jammy```
