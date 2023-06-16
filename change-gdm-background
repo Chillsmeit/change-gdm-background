@@ -12,7 +12,7 @@ fi
 
 # Check what linux distro is being used.
 distro="$(lsb_release -c | cut -f 2)"
-if ! [[ "$distro" =~ (focal|groovy|hirsute) ]]; then
+if ! [[ "$distro" =~ (focal|groovy|hirsute|jammy) ]]; then
     echo 'Sorry, this script only works with focal, groovy or hirsute distros.'
     exit 1
 fi
@@ -141,7 +141,7 @@ if [[ $(file --mime-type -b "$1") == image/*g ]]; then
     newBg="#lockDialogGroup {
 	background: url('resource:\/\/\/org\/gnome\/shell\/theme\/$imgFile');
 	background-size: cover; }"
-    perl -i -0777 -pe "s/$oldBg/$newBg/s" "$workDir"/theme/gdm3.css
+    perl -i -0777 -pe "s/$oldBg/$newBg/s" "$workDir"/theme/gdm.css
 
     # Generate gresource xml file.
     echo '<?xml version="1.0" encoding="UTF-8"?>
@@ -181,7 +181,7 @@ elif [[ "$1" =~ ^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$ ]]; then
     newBg="#lockDialogGroup {
 	background: $BgColor;
 	background-size: cover; }"
-    perl -i -0777 -pe "s/$oldBg/$newBg/s" "$workDir"/theme/gdm3.css
+    perl -i -0777 -pe "s/$oldBg/$newBg/s" "$workDir"/theme/gdm.css
 
     # Generate the gresource xml file.
     echo '<?xml version="1.0" encoding="UTF-8"?>
