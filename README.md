@@ -1,6 +1,7 @@
 ## Warning
 
 **This fork was made specifically to work with Ubuntu or Pop OS 22.04 aka Jammy!**
+**DO NOT RUN THIS ON OTHER VERSIONS!**
 
 If you are going to set an image file that has spaces in its file name or folders, remember to
 scape them with backslashes.
